@@ -41,8 +41,8 @@ header {
   margin: 5rem auto;
   flex-direction: row-reverse;
   background-color: white;
-  padding: 0 0 0 1rem;
-  width: 980px;
+  padding: 0 0 0 0;
+  width: 70%;
   border-radius: 4px;
   align-items: center;
   justify-content: space-between;
@@ -111,8 +111,9 @@ li {
 }
 
 .img_News {
-  width: 240px;
+  width: 100%;
   height: 180px;
+  object-fit: cover;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 }
@@ -155,6 +156,134 @@ li {
   font-size: 12px;
   line-height: 18px;
   font-family: sans-serif;
+}
+
+@media (max-width: 1130px) {
+  #cardPrincipal {
+    width: 90%;
+    height: 260px;
+  }
+  .img_News_Card{
+    object-fit: cover;
+  }
+  .p_Resumo_Card{
+    margin: 2px;
+  }
+  .p_Titulo_Card{
+    margin: 2px;
+  }
+  .img_News{
+    object-fit: cover;
+    height: 200px;
+  }
+  li{
+    height: 200px;
+  }
+  .li_News {
+    width: 100vw;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 820px) {
+  header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    background: #5163d3;
+  }
+  .img_Logo {
+    width: 30px;
+    height: 30px;
+  }
+  #cardPrincipal {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 300px;
+    width: 100%;
+  }
+  .div_Info_Card {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 10px;
+    width: calc(80vw - 10px);
+    height: auto;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+  }
+  .img_News_Card {
+    object-fit: cover;
+    width: 100vw;
+    height: 300px;
+  }
+  .p_Categoria_Card {
+    font-size: 12px;
+  }
+  .p_Resumo_Card {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .p_Titulo_Card {
+    margin: 5px;
+    font-size: 17px;
+    color: white;
+  }
+  .div_Info {
+    display: flex;
+    width: 90%;
+    margin: 0 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .li_News {
+    width: 100vw;
+    margin: 15px;
+  }
+  .div_News {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .div_News_Card {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin-top: 30px;
+    width: 100vw;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .p_Categoria {
+    font-size: 14px;
+  }
+  .p_Titulo {
+    font-size: 14px;
+  }
+  .p_Resumo {
+    font-size: 12px;
+  }
+  .p_Fonte {
+    margin: 0 8px;
+  }
+  .p_Footer {
+    width: 37vw;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 360px) {
