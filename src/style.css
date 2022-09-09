@@ -1,0 +1,385 @@
+body {
+  background: #f9f9f9;
+}
+* {
+  box-sizing: border-box;
+}
+footer {
+  height: 50px;
+  width: 100%;
+  background: #eeeeee;
+  font-family: sans-serif;
+}
+
+.p_Footer {
+  width: 56%;
+  height: auto;
+  padding-top: 15px;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1b1c1e;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  border-radius: 0px;
+  background: #5163d3;
+  justify-content: center;
+  align-items: center;
+}
+.img_Logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+}
+#cardPrincipal {
+  display: flex;
+  margin: 5rem auto;
+  flex-direction: row-reverse;
+  background-color: white;
+  padding: 0 0 0 0;
+  width: 70%;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 3px 5px 0px #1b1c1e1a;
+}
+
+.div_News_Card {
+  display: flex;
+  width: 399px;
+}
+
+.img_News_Card {
+  width: 100%;
+}
+
+.div_Info_Card {
+  width: 50%;
+  display: flex;
+  height: 180px;
+  background-color: white;
+  flex-direction: column;
+}
+
+.p_Categoria_Card {
+  width: max-content;
+  height: 18px;
+  padding: 3px;
+  margin: 8px;
+  background: #d7e4fb;
+  color: #5163d3;
+  border-radius: 4px;
+}
+
+.p_Titulo_Card {
+  font-size: 25px;
+  margin: 10px 10px 20px 10px;
+  color: #5163d3;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.p_Resumo_Card {
+  margin: 10px;
+  font-family: sans-serif;
+}
+ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px 0px #1b1c1e1a;
+  margin-bottom: 50px;
+  margin-right: 40px;
+  background-color: white;
+}
+
+.div_News {
+  height: 180px;
+  width: 30%;
+}
+
+.img_News {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.div_Info {
+  display: flex;
+  margin: 0 0 0 0;
+  flex-direction: column;
+  justify-content: center;
+  height: 180px;
+  width: 600px;
+}
+
+.p_Categoria {
+  width: max-content;
+  height: 18px;
+  padding: 3px;
+  margin: 8px;
+  background: #d7e4fb;
+  color: #5163d3;
+  border-radius: 4px;
+}
+
+.p_Titulo {
+  margin: 10px;
+  color: #5163d3;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.p_Resumo {
+  margin: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.p_Fonte {
+  margin: 10px;
+  color: #8e9094;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 1130px) {
+  #cardPrincipal {
+    width: 90%;
+    height: 260px;
+  }
+  .img_News_Card{
+    object-fit: cover;
+  }
+  .p_Resumo_Card{
+    margin: 2px;
+  }
+  .p_Titulo_Card{
+    margin: 2px;
+  }
+  .img_News{
+    object-fit: cover;
+    height: 200px;
+  }
+  li{
+    height: 200px;
+  }
+  .li_News {
+    width: 100vw;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 820px) {
+  header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    background: #5163d3;
+  }
+  .img_Logo {
+    width: 30px;
+    height: 30px;
+  }
+  #cardPrincipal {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 300px;
+    width: 100%;
+  }
+  .div_Info_Card {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 10px;
+    width: calc(80vw - 10px);
+    height: auto;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+  }
+  .img_News_Card {
+    object-fit: cover;
+    width: 100vw;
+    height: 300px;
+  }
+  .p_Categoria_Card {
+    font-size: 12px;
+  }
+  .p_Resumo_Card {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .p_Titulo_Card {
+    margin: 5px;
+    font-size: 17px;
+    color: white;
+  }
+  .div_Info {
+    display: flex;
+    width: 90%;
+    margin: 0 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .li_News {
+    width: 100vw;
+    margin: 15px;
+  }
+  .div_News {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .div_News_Card {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin-top: 30px;
+    width: 100vw;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .p_Categoria {
+    font-size: 14px;
+  }
+  .p_Titulo {
+    font-size: 14px;
+  }
+  .p_Resumo {
+    font-size: 12px;
+  }
+  .p_Fonte {
+    margin: 0 8px;
+  }
+  .p_Footer {
+    width: 37vw;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    background: #5163d3;
+  }
+  .img_Logo {
+    width: 30px;
+    height: 30px;
+  }
+  #cardPrincipal {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 260px;
+    width: 100vw;
+  }
+  .div_Info_Card {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    width: calc(100vw - 10px);
+    height: auto;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+  }
+  .img_News_Card {
+    width: 100%;
+    height: 260px;
+  }
+  .p_Categoria_Card {
+    font-size: 12px;
+  }
+  .p_Resumo_Card {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .p_Titulo_Card {
+    margin: 5px;
+    font-size: 17px;
+    color: white;
+  }
+  .div_Info {
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .li_News {
+    width: 100vw;
+    margin: 20px;
+  }
+  .div_News {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .div_News_Card {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    width: 100vw;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .p_Categoria {
+    font-size: 12px;
+  }
+  .p_Titulo {
+    font-size: 13px;
+  }
+  .p_Resumo {
+    font-size: 11px;
+  }
+  .p_Fonte {
+    margin: 0 8px;
+  }
+  .p_Footer {
+    width: 64vw;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+  }
+}
